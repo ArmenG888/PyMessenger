@@ -1,8 +1,4 @@
-import socket
-import threading
-import time
-import keyboard
-import random
+import socket,threading,time,random
 class server:
 	def __init__(self):
 		self.name = "Armen"
