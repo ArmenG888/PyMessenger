@@ -1,8 +1,4 @@
-import socket
-import keyboard
-import time
-import threading
-import random
+import socket,time,threading,random
 class client:
 	def __init__(self):
 		self.name = "test"
