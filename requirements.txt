@@ -1,1 +1,2 @@
-keyboard
+pyside2
+win10toast
