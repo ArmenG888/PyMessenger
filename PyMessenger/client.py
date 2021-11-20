@@ -37,11 +37,9 @@ class client(QMainWindow):
 	def recieve(self):
 		while True:
 			data = self.s.recv(1024).decode()
-			self.text += self.username +":"+ data + "\n"
-			self.ui.textEdit.setText(self.text)
+			self.ui.listWidget.addItem(self.username +":"+ data + "\n")
 	def send(self):
-		self.text += self.name +":" + self.ui.entry.toPlainText() + "\n"
-		self.ui.textEdit.setText(self.text)
+		self.ui.listWidget.addItem(self.name +":" + self.ui.entry.toPlainText() + "\n")
 		self.s.send(self.ui.entry.toPlainText().encode())
 		self.ui.entry.setText("")
 
