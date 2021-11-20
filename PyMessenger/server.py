@@ -1,4 +1,5 @@
 import socket,time,threading,random,sys
+from win10toast import ToastNotifier
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent)
 from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
@@ -27,6 +28,8 @@ class server(QMainWindow):
 		while True:
 			data = self.s.recv(1024).decode()
 			self.ui.listWidget.addItem(self.username + ":"+ data + "\n")
+			toaster = ToastNotifier()
+			toaster.show_toast("New Message",self.username +":"+ data + "\n")
 	def send(self):
 		self.ui.listWidget.addItem(self.name + ":" + self.ui.entry.toPlainText() + "\n")
 		self.s.send(self.ui.entry.toPlainText().encode())
