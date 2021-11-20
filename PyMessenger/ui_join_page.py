@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'join_pageBfymkc.ui'
+## Form generated from reading UI file 'join_pagegUcZMx.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -41,15 +41,15 @@ class Ui_MainWindow(object):
         self.username_entry.setStyleSheet(u"border-radius: 15px;")
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(260, 110, 51, 21))
+        self.label.setGeometry(QRect(250, 110, 61, 21))
         self.label.setFont(font)
         self.label_2 = QLabel(self.centralwidget)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(280, 170, 31, 21))
+        self.label_2.setGeometry(QRect(270, 170, 41, 21))
         self.label_2.setFont(font)
         self.label_3 = QLabel(self.centralwidget)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(240, 230, 71, 21))
+        self.label_3.setGeometry(QRect(230, 230, 81, 21))
         self.label_3.setFont(font)
         self.join_button = QPushButton(self.centralwidget)
         self.join_button.setObjectName(u"join_button")

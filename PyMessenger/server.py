@@ -13,7 +13,7 @@ class server(QMainWindow):
 		QMainWindow.__init__(self)
 		self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 		self.s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-		self.s.bind(("127.0.0.1",52001))
+		self.s.bind(("192.168.1.2",52001))
 		self.s.listen(5)
 		self.s, addr = self.s.accept()
 		self.username = self.s.recv(1024).decode()
