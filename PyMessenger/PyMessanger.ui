@@ -56,7 +56,10 @@ p, li { white-space: pre-wrap; }
     </property>
     <property name="styleSheet">
      <string notr="true">border-radius: 15px;
-background-color:white;</string>
+background-color:white;
+active {
+  background-color: yellow;
+}</string>
     </property>
     <property name="text">
      <string>Send</string>
