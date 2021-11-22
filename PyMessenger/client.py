@@ -37,11 +37,11 @@ class client(QMainWindow):
 	def recieve(self):
 		while True:
 			data = self.s.recv(1024).decode()
-			self.ui.listWidget.addItem(self.username +":"+ data + "\n")
+			self.ui.listWidget.addItem(self.username +": "+ data + "\n")
 			toaster = ToastNotifier()
-			toaster.show_toast("New Message",self.username +":"+ data + "\n")
+			toaster.show_toast("New Message",self.username +": "+ data + "\n")
 	def send(self):
-		self.ui.listWidget.addItem(self.name +":" + self.ui.entry.toPlainText() + "\n")
+		self.ui.listWidget.addItem(self.name +": " + self.ui.entry.toPlainText() + "\n")
 		self.s.send(self.ui.entry.toPlainText().encode())
 		self.ui.entry.setText("")
 
