@@ -1,7 +1,7 @@
 # PyMessenger
 PyMessenger basic app to message each other.
 Works using threading. You cannot message and recieve messages at the same time 
-No Ui yet. Will be added soon
+
 <h2> Work in Progress... </h2>
 
 <h1> Installation </h1>
