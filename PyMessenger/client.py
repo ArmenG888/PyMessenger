@@ -21,7 +21,6 @@ class client(QMainWindow):
 			self.ui.port_entry.setText(r[2])
 		self.show()
 	def join(self):
-		self.text = ""
 		with open("INFO","w+") as r:
 			r.write(self.ui.username_entry.text()+","+ self.ui.ip_entry.text() +","+self.ui.port_entry.text())
 		self.name = self.ui.username_entry.text()

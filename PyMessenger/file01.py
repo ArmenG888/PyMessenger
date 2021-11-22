@@ -1,8 +1,6 @@
-x = 11
-y = 11
-if x > y:
-    print("x is greater than y")
-elif x == y:
-    print("x equals to y")
-else:
-    print("y is greater than x")
+lst = [1,2,3,4,5,6,7,8,9,190,42,32,32,5,42,42,4,2,4,2,542,53,6,23,42,5]
+adding = 0
+for x in lst:
+    adding+= x
+
+print(adding)
